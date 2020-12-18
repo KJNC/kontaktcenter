@@ -238,11 +238,13 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="form-description">Beskrivelse</label>
-                    <textarea class="form-input input-width-xl" rows="10" id="form-description" name="form-description" required></textarea>
+                    <span class="form-hint" id="beskrivelse-form-hint">Send ikke følsomme og fortrolige personoplysninger.<br/>
+                        Læs mere om, hvad <a href="https://www.borger.dk/internet-og-sikkerhed/dine-personlige-oplysninger/Mine-personlige-oplysninger-paa-nettet">følsomme og fortrolige personoplysninger</a> er på borger.dk.</span>
+                    <textarea class="form-input input-width-xl" rows="10" id="form-description" name="form-description" aria-describedby="beskrivelse-form-hint" required></textarea>
                 </div>
                 <div class="form-group file-input">
                     <label class="form-label" for="form-files">Vedhæft filer</label>
-                    <input type="file" id="form-files" name="form-files" multiple>
+                    <input type="file" id="form-files" name="form-files" class="w-percent-100" multiple>
                 </div>
             </fieldset>
 
@@ -335,14 +337,17 @@
                 </div>
                 <div class="form-group form-error">
                     <label class="form-label" for="error-form-description">Beskrivelse</label>
+                    <span class="form-hint" id="error-beskrivelse-form-hint">Send ikke følsomme og fortrolige personoplysninger.<br/>
+                        Læs mere om, hvad <a href="https://www.borger.dk/internet-og-sikkerhed/dine-personlige-oplysninger/Mine-personlige-oplysninger-paa-nettet">følsomme og fortrolige personoplysninger</a> er på borger.dk.</span>
+
                     <span class="form-error-message" id="form-error-description">
                         <span class="sr-only">Fejl:</span> Beskriv din henvendelse
                     </span>
-                    <textarea class="form-input input-width-xl" rows="10" id="error-form-description" name="form-description" required aria-invalid="true" aria-describedby="form-error-description"></textarea>
+                    <textarea class="form-input input-width-xl" rows="10" id="error-form-description" name="form-description" required aria-invalid="true" aria-describedby="error-beskrivelse-form-hint form-error-description"></textarea>
                 </div>
                 <div class="form-group file-input">
                     <label class="form-label" for="error-form-files">Vedhæft filer <span class="weight-normal">(frivilligt)</span></label>
-                    <input type="file" id="error-form-files" name="form-files" multiple>
+                    <input type="file" id="error-form-files" name="form-files" class="w-percent-100" multiple>
                 </div>
             </fieldset>
 
